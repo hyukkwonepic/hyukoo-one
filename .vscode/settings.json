@@ -1,0 +1,9 @@
+{
+  "editor.formatOnSave": true,
+  "[mdx]": {
+    "editor.wordWrap": "on"
+  },
+  "[markdown]": {
+    "editor.wordWrap": "on"
+  }
+}
