@@ -1,0 +1,11 @@
+[[redirects]]
+  from = "/projects"
+  to = "https://hyukoo-one-projects.netlify.app"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/dev-blog"
+  to = "https://hyukoo-one-dev-blog.netlify.app"
+  status = 200
+  force = true
