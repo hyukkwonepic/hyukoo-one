@@ -1,3 +1,4 @@
+// @ts-ignore - MDX file import not recognized by TypeScript
 import Welcome from './welcome.mdx';
 import Header from '../components/header/header';
 
