@@ -1,6 +1,6 @@
-// @ts-ignore - MDX file import not recognized by TypeScript
+// @ts-expect-error - MDX file import not recognized by TypeScript
 import Welcome from './welcome.mdx';
-import Header from '../components/header/header';
+import { Header } from 'ui';
 
 export default function Index() {
   return (
