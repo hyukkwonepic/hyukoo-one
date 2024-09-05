@@ -5,7 +5,7 @@ import { ThemeProvider } from 'next-themes';
 
 const title = `Hyukoo's site`;
 const description =
-  'Personal website of Hyukoo, a software engineer specializing in frontend development. Explore his projects and personal interests. Connect via various social platforms.';
+  'Personal website of Hyukoo Kwon, a software engineer specializing in frontend development. Explore his projects and personal interests. Connect via various social platforms.';
 
 export const metadata = {
   title,
