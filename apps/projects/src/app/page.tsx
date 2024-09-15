@@ -256,6 +256,14 @@ const projects: Project[] = [
   },
 ];
 
+function SectionTitle({ children }: { children?: React.ReactNode }) {
+  return (
+    <div className="text-zinc-700 dark:text-zinc-300 font-semibold text-xl">
+      {children}
+    </div>
+  );
+}
+
 export default async function Index() {
   return (
     <div>
@@ -275,7 +283,7 @@ export default async function Index() {
 
           <section>
             <div className="flex justify-between">
-              <div className="text-zinc-700 font-semibold text-xl">Pinned</div>
+              <SectionTitle>Pinned</SectionTitle>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-12 mt-8">
               {projects
@@ -300,7 +308,7 @@ export default async function Index() {
 
           <section>
             <div className="flex justify-between">
-              <div className="text-zinc-700 font-semibold text-xl">More</div>
+              <SectionTitle>Pinned</SectionTitle>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-12 mt-8">
               {projects
