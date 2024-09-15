@@ -3,10 +3,15 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const { composePlugins, withNx } = require('@nx/next');
 
+const isProductionBuild = process.env.NODE_ENV === 'production';
+
 /**
  * @type {import('@nx/next/plugins/with-nx').WithNxOptions}
  **/
 const nextConfig = {
+  ...(isProductionBuild
+    ? { assetPrefix: 'https://main--hyukoo-one-projects.netlify.app' }
+    : {}),
   nx: {
     // Set this to true if you would like to use SVGR
     // See: https://github.com/gregberge/svgr
