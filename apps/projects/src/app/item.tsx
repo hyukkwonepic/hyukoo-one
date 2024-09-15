@@ -13,7 +13,7 @@ function Item({
   description,
 }: ItemProps) {
   return (
-    <div className="space-y-4 text-zinc-700 ">
+    <div className="space-y-4 text-zinc-700 dark:text-zinc-300 ">
       {preview && (
         <MediaPreview
           image={{
