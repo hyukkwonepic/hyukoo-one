@@ -5,7 +5,7 @@ import { ThemeProvider } from 'next-themes';
 
 const title = `Projects | Hyukoo's site`;
 const description =
-  'Personal website of Hyukoo Kwon, a software engineer specializing in frontend development. Explore his projects and personal interests. Connect via various social platforms.';
+  "Explore Hyukoo Kwon's software engineering projects, showcasing expertise in frontend development, React, Next.js, and various web technologies. View professional and personal works demonstrating skills in building efficient, user-friendly applications.";
 
 export const metadata = {
   title,

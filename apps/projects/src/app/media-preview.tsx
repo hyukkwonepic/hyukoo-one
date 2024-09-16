@@ -33,7 +33,9 @@ const MediaPreview: React.FC<MediaProps> = ({ image, video }) => {
 
   return (
     <div
-      className="relative aspect-[4/3] rounded shadow overflow-hidden"
+      className={`relative aspect-[4/3] rounded shadow overflow-hidden ${
+        video ? 'hover:cursor-progress' : ''
+      }`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
