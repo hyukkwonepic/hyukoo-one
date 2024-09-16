@@ -1,4 +1,4 @@
-import { ExternalLink, Link, Link2 } from 'lucide-react';
+import { ExternalLink, Link2 } from 'lucide-react';
 import MediaPreview from './media-preview';
 import { Project } from './page';
 

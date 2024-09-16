@@ -20,12 +20,12 @@ export interface Project {
 const projects: Project[] = [
   {
     preview: {
-      imageUrl:
-        'https://placehold.jp/24/d4d4d8/ffffff/400x300.png?text=Coming%20Soon',
+      imageUrl: 'https://hyukoo.one/kiwiy-daily-scrum-preview.png',
+      videoUrl: 'https://hyukoo.one/kiwiy-daily-scrum-preview.mp4',
     },
     title: 'Kiwiy Daily Scrum',
     period: '2024',
-    organization: 'Personal project',
+    organization: 'Kiwiy',
     links: [
       {
         title: 'Website',
@@ -33,7 +33,7 @@ const projects: Project[] = [
         isExternal: true,
       },
       {
-        title: 'Github Repo',
+        title: 'Github',
         url: 'https://github.com/kiwiy-is/dailyscrum',
         isExternal: true,
       },
@@ -44,8 +44,7 @@ const projects: Project[] = [
   },
   {
     preview: {
-      imageUrl:
-        'https://placehold.jp/24/d4d4d8/ffffff/400x300.png?text=Coming%20Soon',
+      imageUrl: 'https://hyukoo.one/hyukoo-one-preview.png',
     },
     title: 'Hyukoo One',
     period: '2024',
@@ -57,7 +56,7 @@ const projects: Project[] = [
         isExternal: false,
       },
       {
-        title: 'Github Repo',
+        title: 'Github',
         url: 'https://github.com/hyukkwonepic/hyukoo-one',
         isExternal: true,
       },
@@ -67,15 +66,15 @@ const projects: Project[] = [
   },
   {
     preview: {
-      imageUrl:
-        'https://placehold.jp/24/d4d4d8/ffffff/400x300.png?text=Coming%20Soon',
+      imageUrl: 'https://hyukoo.one/poc-mfe-todo-app-preview.png',
+      videoUrl: 'https://hyukoo.one/poc-mfe-todo-app-preview.mp4',
     },
     title: 'PoC of Micro-Frontends Todo App',
     period: '2024',
     organization: 'Personal project',
     links: [
       {
-        title: 'Github Repo',
+        title: 'Github',
         url: 'https://github.com/hyukkwonepic/poc-mfe-todo-app',
         isExternal: true,
       },
@@ -85,8 +84,8 @@ const projects: Project[] = [
   },
   {
     preview: {
-      imageUrl:
-        'https://placehold.jp/24/d4d4d8/ffffff/400x300.png?text=Coming%20Soon',
+      imageUrl: 'https://hyukoo.one/mm-easy-preview.png',
+      videoUrl: 'https://hyukoo.one/mm-easy-preview.mp4',
     },
     title: 'MM Easy',
     period: '2024',
@@ -98,7 +97,7 @@ const projects: Project[] = [
         isExternal: true,
       },
       {
-        title: 'Github Repo',
+        title: 'Github',
         url: 'https://github.com/mm-easy/mm-easy',
         isExternal: true,
       },
@@ -109,8 +108,8 @@ const projects: Project[] = [
   },
   {
     preview: {
-      imageUrl:
-        'https://placehold.jp/24/d4d4d8/ffffff/400x300.png?text=Coming%20Soon',
+      imageUrl: 'https://hyukoo.one/dooray-preview.png',
+      videoUrl: 'https://hyukoo.one/dooray-preview.mp4',
     },
     title: 'Dooray',
     period: '2021 - 2023',
@@ -128,8 +127,8 @@ const projects: Project[] = [
   },
   {
     preview: {
-      imageUrl:
-        'https://placehold.jp/24/d4d4d8/ffffff/400x300.png?text=Coming%20Soon',
+      imageUrl: 'https://hyukoo.one/dooray-billing-preview.png',
+      videoUrl: 'https://hyukoo.one/dooray-billing-preview.mp4',
     },
     title: 'Dooray Billing',
     period: '2023',
@@ -147,15 +146,15 @@ const projects: Project[] = [
   },
   {
     preview: {
-      imageUrl:
-        'https://placehold.jp/24/d4d4d8/ffffff/400x300.png?text=Coming%20Soon',
+      imageUrl: 'https://hyukoo.one/kakapoly-store-preview.png',
+      videoUrl: 'https://hyukoo.one/kakapoly-store-preview.mp4',
     },
     title: 'Kakapoly Store',
     period: '2022',
     organization: 'Green Gables Studio',
     links: [
       {
-        title: 'Github Repo',
+        title: 'Github',
         url: 'https://github.com/Green-Gables-Studio/kakapoly-store-hydrogen',
         isExternal: true,
       },
@@ -165,8 +164,8 @@ const projects: Project[] = [
   },
   {
     preview: {
-      imageUrl:
-        'https://placehold.jp/24/d4d4d8/ffffff/400x300.png?text=Coming%20Soon',
+      imageUrl: 'https://hyukoo.one/protopie-website-preview.png',
+      videoUrl: 'https://hyukoo.one/protopie-website-preview.mp4',
     },
     title: 'ProtoPie Website',
     period: '2020-2021',
@@ -183,8 +182,8 @@ const projects: Project[] = [
   },
   {
     preview: {
-      imageUrl:
-        'https://placehold.jp/24/d4d4d8/ffffff/400x300.png?text=Coming%20Soon',
+      imageUrl: 'https://hyukoo.one/protopie-billing-preview.png',
+      videoUrl: 'https://hyukoo.one/protopie-billing-preview.mp4',
     },
     title: 'ProtoPie Billing',
     period: '2021',
@@ -202,8 +201,7 @@ const projects: Project[] = [
 
   {
     preview: {
-      imageUrl:
-        'https://placehold.jp/24/d4d4d8/ffffff/400x300.png?text=Coming%20Soon',
+      imageUrl: 'https://hyukoo.one/seoulbitz-preview.png',
     },
     title: 'Seoulbitz',
     period: '2020',
@@ -220,8 +218,8 @@ const projects: Project[] = [
   },
   {
     preview: {
-      imageUrl:
-        'https://placehold.jp/24/d4d4d8/ffffff/400x300.png?text=Coming%20Soon',
+      imageUrl: 'https://hyukoo.one/microsalts-preview.png',
+      videoUrl: 'https://hyukoo.one/microsalts-preview.mp4',
     },
     title: 'Microsalts',
     period: '2019',
@@ -238,8 +236,8 @@ const projects: Project[] = [
   },
   {
     preview: {
-      imageUrl: 'http://localhost:3001/iamport-analytics-preview.png',
-      videoUrl: 'http://localhost:3001/iamport-analytics-preview-2.mp4',
+      imageUrl: 'http://hyukoo.one/iamport-analytics-preview.png',
+      videoUrl: 'http://hyukoo.one/iamport-analytics-preview.mp4',
     },
     title: 'Iamport Analytics (now PortOne Analytics)',
     period: '2017 - 2018',
@@ -308,7 +306,7 @@ export default async function Index() {
 
           <section>
             <div className="flex justify-between">
-              <SectionTitle>Pinned</SectionTitle>
+              <SectionTitle>More</SectionTitle>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-12 mt-8">
               {projects
