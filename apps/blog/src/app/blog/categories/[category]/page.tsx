@@ -14,7 +14,7 @@ interface PostMetadata extends Metadata {
   categories?: string[];
 }
 
-export default async function Category({
+export default async function CategoryPage({
   params,
 }: {
   params: { category: string };

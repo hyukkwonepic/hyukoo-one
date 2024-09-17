@@ -2,7 +2,11 @@ import { Header } from 'ui';
 import { CATEGORIES } from '../../constants/categories';
 import Link from 'next/link';
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+export default function BlogLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <>
       <Header />
