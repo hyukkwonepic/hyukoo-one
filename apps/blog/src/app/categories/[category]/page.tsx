@@ -21,7 +21,6 @@ export default async function Category({
 }) {
   let dirents: Dirent[] = [];
   try {
-    console.log({ postsDir });
     dirents = await readdir(postsDir, { withFileTypes: true });
   } catch (error) {
     console.log(error);
