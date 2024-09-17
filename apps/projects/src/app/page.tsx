@@ -24,7 +24,7 @@ const projects: Project[] = [
       videoUrl: 'https://hyukoo.one/kiwiy-daily-scrum-preview.mp4',
     },
     title: 'Kiwiy Daily Scrum',
-    period: '2024',
+    period: '2024 - Present',
     organization: 'Kiwiy',
     links: [
       {
@@ -33,13 +33,13 @@ const projects: Project[] = [
         isExternal: true,
       },
       {
-        title: 'Github',
+        title: 'GitHub',
         url: 'https://github.com/kiwiy-is/dailyscrum',
         isExternal: true,
       },
     ],
     description:
-      'A minimalist daily scrum board. Developed with Next.js. By leveraging React Server Components, most of the database querying and rendering is handled on the server side. It uses Supabase for PostgreSQL database management and real-time communication.',
+      'Kiwiy Daily Scrum is a minimalist daily scrum board. It is developed on top of Next.js. It leverages React Server Components to handle most database querying and rendering on the server side. The project uses Supabase for PostgreSQL database management and real-time communication.',
     pinned: true,
   },
   {
@@ -56,12 +56,12 @@ const projects: Project[] = [
         isExternal: false,
       },
       {
-        title: 'Github',
+        title: 'GitHub',
         url: 'https://github.com/hyukkwonepic/hyukoo-one',
         isExternal: true,
       },
     ],
-    description: 'Details to be updated',
+    description: 'Personal website of Hyukoo Kwon.',
     pinned: false,
   },
   {
@@ -74,12 +74,13 @@ const projects: Project[] = [
     organization: 'Personal project',
     links: [
       {
-        title: 'Github',
+        title: 'GitHub',
         url: 'https://github.com/hyukkwonepic/poc-mfe-todo-app',
         isExternal: true,
       },
     ],
-    description: 'Details to be updated',
+    description:
+      'Proof of Concept project to validate building Micro-Frontends applications. Two React apps were developed separately and served on an app shell using Module Federation. The apps communicate between them using event emitters managed by the shell. Some components are federated to be shared over the network.',
     pinned: false,
   },
   {
@@ -87,7 +88,7 @@ const projects: Project[] = [
       imageUrl: 'https://hyukoo.one/mm-easy-preview.png',
       videoUrl: 'https://hyukoo.one/mm-easy-preview.mp4',
     },
-    title: 'MM Easy',
+    title: 'Mentorship: MM Easy',
     period: '2024',
     organization: 'Team Sparta Coding Club',
     links: [
@@ -97,13 +98,13 @@ const projects: Project[] = [
         isExternal: true,
       },
       {
-        title: 'Github',
+        title: 'GitHub',
         url: 'https://github.com/mm-easy/mm-easy',
         isExternal: true,
       },
     ],
     description:
-      'A Korean learning website with quizzes and games. This is a project I mentored. I helped students structure the architecture and choose a tech stack suitable for improving productivity. Built on Next.js, it handles and fetches data using Supabase and TanStack Query, and uses Jotai for state management.',
+      'Mentored the development of a Korean learning platform featuring quizzes and games. Guided students in structuring the architecture and selecting an efficient tech stack. The project uses Next.js for the frontend, Supabase for database management, TanStack Query for data fetching, and Jotai for state management.',
     pinned: false,
   },
   {
@@ -111,18 +112,18 @@ const projects: Project[] = [
       imageUrl: 'https://hyukoo.one/dooray-preview.png',
       videoUrl: 'https://hyukoo.one/dooray-preview.mp4',
     },
-    title: 'Dooray',
+    title: 'Dooray Platform Renewal',
     period: '2021 - 2023',
     organization: 'NHN Dooray',
     links: [
       {
         title: 'Website',
-        url: 'https://dooray.com/',
+        url: 'https://dooray.com/main/en/',
         isExternal: true,
       },
     ],
     description:
-      'A collaboration platform including task management, messenger, video conferencing, and more. It consists of 12 services, 8 of which were rebuilt with React and managed inside a monorepo. Redux is used for state management and Redux Saga for complex async actions. Micro-Frontends architecture was applied for separate deployment.',
+      'Dooray is a collaboration platform with task management, messaging, and video conferencing. This project rebuilt 8 services using React in a monorepo. It uses Redux for state management and Redux Saga for complex async actions. Micro-Frontends architecture was partially applied for separate deployment of services.',
     pinned: true,
   },
   {
@@ -136,12 +137,12 @@ const projects: Project[] = [
     links: [
       {
         title: 'Website',
-        url: 'https://dooray.com/',
+        url: 'https://dooray.com/main/en/',
         isExternal: true,
       },
     ],
     description:
-      'A billing checkout and management website for Dooray. Architected to be extendable as a renewed admin console. Developed with Next.js, it partially adopted React Server Components to ensure secure server-client communication. The UI was built using an internal UI kit, with Storybook employed for visual testing.',
+      "Dooray's checkout and subscription management website. It is architected to be extendable as a renewed admin console. Developed with Next.js, it partially adopted React Server Components to ensure secure server-client communication. The UI was built using an internal UI kit, with Storybook employed for visual testing.",
     pinned: true,
   },
   {
@@ -154,12 +155,13 @@ const projects: Project[] = [
     organization: 'Green Gables Studio',
     links: [
       {
-        title: 'Github',
+        title: 'GitHub',
         url: 'https://github.com/Green-Gables-Studio/kakapoly-store-hydrogen',
         isExternal: true,
       },
     ],
-    description: 'Details to be updated',
+    description:
+      "Kakapoly Store is an e-commece store primarily selling merchandise. It is built with Shopify's Hydrogen framework, leveriging React Server Components to querying and rendering page on the server side.",
     pinned: false,
   },
   {
@@ -177,7 +179,8 @@ const projects: Project[] = [
         isExternal: true,
       },
     ],
-    description: 'Details to be updated',
+    description:
+      "ProtoPie is a no-code prototyping tool for mobile and web applications. This project rebuilt ProtoPie's official website to align with new branding and serve as a content hub. It is built with Next.js, the renewed site features documentation, pricing information, a blog, FAQs, use cases, and a product download page. Content is managed through a headless CMS. To improve performance, Static Site Generation was implemented, and CDN caching is used for optimized asset delivery.",
     pinned: true,
   },
   {
@@ -195,7 +198,8 @@ const projects: Project[] = [
         isExternal: true,
       },
     ],
-    description: 'Details to be updated',
+    description:
+      "ProtoPie's checkout and subscription management website. It is developed with Next.js, integrates Paddle for billing operations. The development process used Storybook and Chromatic for automated UI testing.",
     pinned: true,
   },
 
@@ -208,12 +212,13 @@ const projects: Project[] = [
     organization: 'Seoulbitz Team',
     links: [
       {
-        title: 'Github',
+        title: 'GitHub',
         url: 'https://github.com/seoulbitz/seoulbitz-client',
         isExternal: true,
       },
     ],
-    description: 'Details to be updated',
+    description:
+      'Seoulbitz is an online magazine that introduces unique spots to visit in Seoul. It is developed with Next.js, with content managed by Sanity, the headless CMS, and deployed using Vercel. It features a map-like UI for location filtering, user-location-based filtering, and implemented technical SEO.',
     pinned: false,
   },
   {
@@ -231,9 +236,29 @@ const projects: Project[] = [
         isExternal: true,
       },
     ],
-    description: 'Details to be updated',
+    description:
+      'Microsalts is an e-commerce store for low-sodium meal delivery. It features a personalized meal recommendation system based on user health information. The store includes essential e-commerce functions like shopping cart, order processing, payment integration, and order management. It is built with React and uses Apollo Client for interacting with the GraphQL server.',
     pinned: false,
   },
+  {
+    preview: {
+      imageUrl: 'https://hyukoo.one/iamport-react-native-preview.png',
+    },
+    title: 'iamport-react-native',
+    period: '2017',
+    organization: 'PortOne (formerly Iamport, pre-merger)',
+    links: [
+      {
+        title: 'GitHub',
+        url: 'https://github.com/iamport/iamport-react-native',
+        isExternal: true,
+      },
+    ],
+    description:
+      'An open-source React Native SDK for Iamport. It allows easier payment integration for React Native apps by providing a WebView component.',
+    pinned: false,
+  },
+  // https://github.com/iamport/iamport-react-native
   {
     preview: {
       imageUrl: 'http://hyukoo.one/iamport-analytics-preview.png',
@@ -249,7 +274,8 @@ const projects: Project[] = [
         isExternal: true,
       },
     ],
-    description: 'Details to be updated',
+    description:
+      'Iamport Analytics is a payment data analytics product. It is built with React, it uses Redux for state management and Apache ECharts for data visualization. The project focused on performance optimization, reducing component rendering and memoizing expensive visualization data to enhance user experience.',
     pinned: true,
   },
 ];
