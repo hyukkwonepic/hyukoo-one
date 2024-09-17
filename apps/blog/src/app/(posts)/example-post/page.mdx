@@ -1,0 +1,20 @@
+export const metadata = {
+  title: 'Example Post',
+  description: 'hi',
+  publishedAt: '2024-09-17T12:28:23.947Z',
+  categories: ['general'],
+};
+
+export function generateMetadata() {
+  return {
+    ...metadata,
+    openGraph: {
+      title: metadata.title,
+      description: metadata.description,
+    },
+  };
+}
+
+# Hello!
+
+A sample mdx...
