@@ -12,5 +12,6 @@ export default function BlogPage() {
 
   const [id] = entry;
 
-  redirect(`/blog/categories/${id}`);
+  // redirect(`/blog/categories/${id}`);
+  return <div>Blog!</div>;
 }
