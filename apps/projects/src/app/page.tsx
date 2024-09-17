@@ -261,8 +261,8 @@ const projects: Project[] = [
   // https://github.com/iamport/iamport-react-native
   {
     preview: {
-      imageUrl: 'http://hyukoo.one/iamport-analytics-preview.png',
-      videoUrl: 'http://hyukoo.one/iamport-analytics-preview.mp4',
+      imageUrl: 'https://hyukoo.one/iamport-analytics-preview.png',
+      videoUrl: 'https://hyukoo.one/iamport-analytics-preview.mp4',
     },
     title: 'Iamport Analytics (now PortOne Analytics)',
     period: '2017 - 2018',
