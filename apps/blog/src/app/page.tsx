@@ -12,5 +12,5 @@ export default function Index() {
 
   const [id] = entry;
 
-  redirect(`/categories/${id}`);
+  redirect(`/blog/categories/${id}`);
 }

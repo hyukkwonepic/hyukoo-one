@@ -1,11 +1,11 @@
 import Link from 'next/link';
-import { CATEGORIES } from '../../../constants/categories';
 import { readdir } from 'fs/promises';
 import path from 'path';
 import type { Metadata } from 'next';
 import { Dirent } from 'fs';
+import { CATEGORIES } from './constants';
 
-const postsDir = path.resolve('src', 'app', '(posts)');
+const postsDir = path.resolve('src', 'app', 'blog', '(posts)');
 
 interface PostMetadata extends Metadata {
   publishedAt?: string;
@@ -52,7 +52,7 @@ export default async function Category({
       <br />
       <div>
         {posts.map((post) => (
-          <Link key={post.slug} href={`/${post.slug}`}>
+          <Link key={post.slug} href={`/blog/${post.slug}`}>
             {typeof post.title === 'string' && post.title}, {post.publishedAt}
           </Link>
         ))}
