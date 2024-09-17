@@ -5,7 +5,7 @@
   force = true
 
 [[redirects]]
-  from = "/dev-blog"
+  from = "/blog"
   to = "https://hyukoo-one-dev-blog.netlify.app"
   status = 200
   force = true
