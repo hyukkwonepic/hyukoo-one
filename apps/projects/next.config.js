@@ -12,6 +12,15 @@ const nextConfig = {
   ...(isProductionBuild
     ? { assetPrefix: 'https://main--hyukoo-one-projects.netlify.app' }
     : {}),
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'hyukoo.one',
+        port: '',
+      },
+    ],
+  },
   nx: {
     // Set this to true if you would like to use SVGR
     // See: https://github.com/gregberge/svgr
