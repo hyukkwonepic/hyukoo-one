@@ -1,0 +1,20 @@
+export const metadata = {
+  title: 'Example post two',
+  description: 'hi',
+  publishedAt: '2024-09-17T12:28:23.947Z',
+  categories: ['software-development'],
+};
+
+export function generateMetadata() {
+  return {
+    ...metadata,
+    openGraph: {
+      title: metadata.title,
+      description: metadata.description,
+    },
+  };
+}
+
+# Example post two
+
+a post

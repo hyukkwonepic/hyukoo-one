@@ -1,9 +1,9 @@
 {
-  "name": "dev-blog",
+  "name": "blog",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/dev-blog",
+  "sourceRoot": "apps/blog",
   "projectType": "application",
   "tags": [],
-  "// targets": "to see all targets run: nx show project dev-blog --web",
+  "// targets": "to see all targets run: nx show project blog --web",
   "targets": {}
 }
