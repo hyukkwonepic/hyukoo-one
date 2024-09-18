@@ -10,7 +10,7 @@ const isProductionBuild = process.env.NODE_ENV === 'production';
  **/
 const nextConfig = {
   ...(isProductionBuild
-    ? { assetPrefix: 'https://main--hyukoo-one-projects.netlify.app' }
+    ? { assetPrefix: 'https://hyukoo-one-projects.netlify.app' }
     : {}),
   images: {
     remotePatterns: [

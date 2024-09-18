@@ -6,12 +6,12 @@
 
 [[redirects]]
   from = "/blog"
-  to = "https://hyukoo-one-dev-blog.netlify.app/blog"
+  to = "https://hyukoo-one-blog.netlify.app/blog"
   status = 200
   force = true
 
 [[redirects]]
   from = "/blog/*"
-  to = "https://hyukoo-one-dev-blog.netlify.app/blog/:splat"
+  to = "https://hyukoo-one-blog.netlify.app/blog/:splat"
   status = 200
   force = true

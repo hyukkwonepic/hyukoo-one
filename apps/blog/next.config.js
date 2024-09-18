@@ -16,7 +16,7 @@ const withMDX = createMDX({
  **/
 const nextConfig = {
   ...(isProductionBuild
-    ? { assetPrefix: 'https://hyukoo-one-dev-blog.netlify.app' }
+    ? { assetPrefix: 'https://hyukoo-one-blog.netlify.app' }
     : {}),
   nx: {
     // Set this to true if you would like to use SVGR

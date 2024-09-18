@@ -19,9 +19,9 @@ export function Header() {
                 </span>
               </a>
 
-              <a href="https://hyukoo.one/dev-blog ">
+              <a href="https://hyukoo.one/blog ">
                 <span className="text-zinc-700 dark:text-zinc-300 font-m tracking-tight hover:underline">
-                  /dev-blog
+                  /blog
                 </span>
               </a>
             </div>
