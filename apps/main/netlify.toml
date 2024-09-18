@@ -5,6 +5,12 @@
   force = true
 
 [[redirects]]
+  from = "/blog"
+  to = "https://hyukoo-one-dev-blog.netlify.app/blog"
+  status = 200
+  force = true
+
+[[redirects]]
   from = "/blog/*"
   to = "https://hyukoo-one-dev-blog.netlify.app/blog/:splat"
   status = 200
