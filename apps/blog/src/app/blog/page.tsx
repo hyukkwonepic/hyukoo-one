@@ -1,7 +1,7 @@
 import { redirect } from 'next/navigation';
-import { CATEGORIES } from '../constants/categories';
+import { CATEGORIES } from '../../constants/categories';
 
-export default function Index() {
+export default function BlogPage() {
   const entry = Object.entries(CATEGORIES).find(
     ([key, value]) => value.order === 0
   );
@@ -12,5 +12,5 @@ export default function Index() {
 
   const [id] = entry;
 
-  redirect(`/categories/${id}`);
+  redirect(`/blog/categories/${id}`);
 }

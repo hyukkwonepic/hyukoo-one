@@ -1,10 +1,7 @@
-import Link from 'next/link';
 import './global.css';
-import { CATEGORIES } from '../constants/categories';
 import { GeistSans } from 'geist/font/sans';
 import { GeistMono } from 'geist/font/mono';
 import { ThemeProvider } from 'next-themes';
-import { Header } from 'ui';
 
 export const metadata = {
   title: 'Welcome to blog',
@@ -23,18 +20,7 @@ export default function RootLayout({
       className={`${GeistSans.variable} ${GeistMono.variable}`}
     >
       <body className="font-sans dark:bg-zinc-900">
-        <ThemeProvider attribute="class">
-          <Header />
-          <div>
-            {Object.entries(CATEGORIES).map(([key, category]) => (
-              <Link key={key} href={`/categories/${key}`}>
-                {category.name}{' '}
-              </Link>
-            ))}
-          </div>
-          <br />
-          {children}
-        </ThemeProvider>
+        <ThemeProvider attribute="class">{children}</ThemeProvider>
       </body>
     </html>
   );
