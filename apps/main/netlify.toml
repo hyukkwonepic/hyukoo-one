@@ -1,6 +1,6 @@
 [[redirects]]
   from = "/projects"
-  to = "https://hyukoo-one-projects.netlify.app"
+  to = "https://hyukoo-one-projects.netlify.app/projects"
   status = 200
   force = true
 
