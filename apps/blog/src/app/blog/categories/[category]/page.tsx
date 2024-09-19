@@ -1,6 +1,6 @@
 import { readdir } from 'fs/promises';
 import path from 'path';
-import type { Metadata, ResolvingMetadata } from 'next';
+import type { Metadata } from 'next';
 import { Dirent } from 'fs';
 import { CATEGORIES } from './constants';
 import { Link, NavLink, Prose } from 'ui';
@@ -8,10 +8,8 @@ import clsx from 'clsx';
 
 export async function generateMetadata({
   params,
-  parent,
 }: {
   params: { category: string };
-  parent: ResolvingMetadata;
 }): Promise<Metadata> {
   const { name } = CATEGORIES[params.category as keyof typeof CATEGORIES];
 
