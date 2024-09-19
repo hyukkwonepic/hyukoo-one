@@ -1,4 +1,4 @@
-import { Header } from 'ui';
+import { Header, Prose } from 'ui';
 import Item from './item';
 
 export interface Project {
@@ -294,14 +294,14 @@ export default async function Index() {
       <Header />
 
       <main>
-        <div className="w-full max-w-3xl mx-auto py-10 px-4">
-          <article className="prose dark:prose-invert prose-zinc-light  prose-headings:font-semibold prose-h1:text-3xl">
+        <div className="w-full max-w-3xl mx-auto py-12 px-4">
+          <Prose>
             {/* <Welcome /> */}
             <h1>Projects</h1>
             {/* <p>Projects I have worked on professionally and in my free time</p> */}
 
             <p>Here are some of the things I{`'`}ve been working on.</p>
-          </article>
+          </Prose>
 
           <hr className="my-12" />
 
