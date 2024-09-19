@@ -23,7 +23,10 @@ export function NavLink({ children, exact = false, ...props }: Props) {
   return (
     <Link
       {...props}
-      className={clsx(props.className, isActive && activeClassName)}
+      className={clsx(
+        props.className,
+        isActive ? activeClassName : 'no-underline'
+      )}
     >
       {children}
     </Link>

@@ -1,10 +1,30 @@
 import { readdir } from 'fs/promises';
 import path from 'path';
-import type { Metadata } from 'next';
+import type { Metadata, ResolvingMetadata } from 'next';
 import { Dirent } from 'fs';
 import { CATEGORIES } from './constants';
 import { Link, NavLink, Prose } from 'ui';
 import clsx from 'clsx';
+
+export async function generateMetadata({
+  params,
+  parent,
+}: {
+  params: { category: string };
+  parent: ResolvingMetadata;
+}): Promise<Metadata> {
+  const { name } = CATEGORIES[params.category as keyof typeof CATEGORIES];
+
+  const title = `${name} | Blog | Hyukoo's site`;
+
+  return {
+    title,
+    openGraph: {
+      title,
+      images: ['https://hyukoo.one/hyukoo-kwon.jpeg'],
+    },
+  };
+}
 
 const postsDir = path.resolve('src', 'app', 'blog', '(posts)');
 
@@ -37,6 +57,7 @@ export default async function CategoryPage({
         const { metadata }: { metadata: PostMetadata } = await import(
           `../../(posts)/${slug}/page.mdx`
         );
+
         return {
           ...metadata,
           slug,
@@ -77,7 +98,7 @@ export default async function CategoryPage({
               <Link
                 className={clsx(
                   'font-semibold text-lg leading-7',
-                  'underline decoration-auto underline-offset-[7px] decoration-zinc-700 dark:decoration-zinc-300'
+                  'underline-offset-[7px]'
                 )}
                 href={`/blog/${post.slug}`}
               >

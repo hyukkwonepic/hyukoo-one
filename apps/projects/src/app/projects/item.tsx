@@ -1,6 +1,7 @@
 import { ExternalLink, Link2 } from 'lucide-react';
-import MediaPreview from './media-preview';
+import MediaPreview from '../media-preview';
 import { Project } from './page';
+import { linkStyles } from 'ui';
 
 type ItemProps = Omit<Project, 'pinned'>;
 
@@ -34,17 +35,17 @@ function Item({
             <a
               key={link.url}
               href={link.url}
-              className="inline-flex hover:underline  items-center gap-1"
+              className={linkStyles()}
               {...(link.isExternal && {
                 rel: 'noreferrer',
                 target: '_blank',
               })}
             >
               <span>{link.title}</span>
-              {link.isExternal ? (
-                <ExternalLink size={16} />
-              ) : (
-                <Link2 size={16} />
+              {link.isExternal && (
+                <span className="ml-1">
+                  <ExternalLink size={16} />
+                </span>
               )}
             </a>
           ))}
