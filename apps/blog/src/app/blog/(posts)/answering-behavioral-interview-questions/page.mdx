@@ -1,0 +1,147 @@
+export const metadata = {
+  title: 'Answering Behavioral Interview Questions',
+  description: 'This post contains my practice responses to common behavioral interview questions for software engineers. It\'s a personal exercise in interview preparation and self-reflection, offering a look into my professional experiences and thought processes.',
+  // publishedAt: 'September 22, 2024',
+  categories: ['software-development'],
+};
+
+export function generateMetadata() {
+  return {
+    ...metadata,
+    openGraph: {
+      title: `${metadata.title} | Blog | Hyukoo's Site`,
+      description: metadata.description,
+      images: ['https://hyukoo.one/hyukoo-kwon.jpeg']
+    },
+  };
+}
+
+# WIP: Answering Behavioral Interview Questions
+
+
+- Date: September 17, 2024
+- Category: [General](/blog/categories/general)
+{/* Last updated at September 19, 2024. */}
+
+---
+
+While preparing for interviews, I found these [behavioral interview questions](https://www.greatfrontend.com/behavioral-interview-guidebook/questions) and thought it would be worth answering them before actual interviews to be able to deliver them concisely. I'm also hoping readers of the post could get to know me better.
+
+<details>
+  <summary>List of questions</summary>
+  
+  1. *Tell me about yourself.*
+  2. *Walk me through your resume.*
+  3. *Why have you applied for this role and team?*
+  4. *Do you have any questions for me? (end of interview)*
+  5. *Can you tell me about a time you improved upon your work upon receiving criticism or feedback?*
+  6. *Can you describe a past project where you had to work with a difficult stakeholder or teammate and how you dealt with it?*
+  7. *Can you describe a time you creatively solved an engineering problem or achieved meaningful metric improvement?*
+  8. *Can you describe a time when you had to make an important engineering decision and how you decided between tradeoffs?*
+  9. *Can you give an example of a time when you had to work on a team project and had to compromise with others to reach a solution?*
+  10. *What do you think is your greatest area for improvement?*
+  11. *Describe a time you failed and had to alter course and adopt a new approach. How did you know change was necessary?*
+  12. *Can you describe a time when you had to work with a tight timeline but was not given a clear direction on how to proceed?*
+  13. *Can you describe a time when you had to adapt to changing priorities or requirements?*
+  14. *Tell me about a time you learnt a new skill outside of work and applied it to your work.*
+  15. *Tell me about a time you learnt a new skill set after observing others leveraging it to great success*
+  16. *Can you describe a time when you had to effectively communicate technical information to a non-technical audience and how you approached it?*
+</details>
+
+## Tell me about yourself.
+
+I have worked as a Software Engineer for 5 years, primarily focusing on frontend development at both startups and big tech companies. Most recently, I've been an instructor in a frontend bootcamp.
+
+In my latest engineering role at NHN Dooray, I contributed to rebuilding the Dooray platform's frontend by modernizing the tech stack to a React-based architecture. I also built an internal UI kit library that included components such as autocomplete, tree view, and data grid. I also gained experience applying Micro-Frontends architecture to Dooray, splitting services out of its single-page application.
+
+In my spare time, I often contribute to building software products with the aim of delivering value to the world while applying new technologies to sharpen my skills as a software engineer. Most recently, I've been developing a product called 'Kiwiy Daily Scrum' to help product teams conduct their daily scrum meetings. While working on this project, I've extensively used React Server Components and Server Actions for user interactions, which has allowed me to gain a deep understanding of React's recent propositions.
+
+## Walk me through your resume
+
+WIP
+
+{/* ## Why have you applied for this role and team
+
+WIP
+
+## Do you have any questions for me? (end of interview)
+
+WIP */}
+
+## Can you tell me about a time you improved upon your work upon receiving criticism or feedback?
+
+When I was building a DataGrid component, I initially designed it to take only a complete set of data on a single component. During a code review, one of my teammates suggested that the component would be better if sub-components were exposed and allowed to be used in a composition pattern, rather than the current usage. I didn't fully understand his feedback at first, so I arranged a meeting to ask questions about it.
+
+His main point was that the composition pattern would offer more flexibility. For styling, the original design required writing styles in a predefined object, whereas with sub-components, you could directly pass styles and other props as needed. Additionally, in cases where customized cells were necessary, a composable DataGrid would make it easier to replace components with customized ones. While this was still possible with the original design by passing custom components inside the object, the new design followed a more natural way of rendering UI in the context of React.
+
+Understanding his points, I reimplemented the DataGrid to support the composition pattern. The result? It did indeed provide more flexibility for component users. I also discovered that a key advantage of the new pattern was the separation of logic from the component. The logic could be provided as separate hooks, allowing component users to decide whether to use the provided hooks or implement their own. Consequently, when grouping the hooks alone, the component essentially becomes a headless component.
+
+## Can you describe a past project where you had to work with a difficult stakeholder or teammate and how you dealt with it?
+
+WIP
+
+... RSC conflict with KAI?
+
+## Can you describe a time you creatively solved an engineering problem or achieved meaningful metric improvement?
+
+WIP
+
+Reducing initial rendering time by reducint React component rendering times. Memoization? Use Redux derived state?
+
+
+## Can you describe a time when you had to make an important engineering decision and how you decided between tradeoffs?
+
+WIP
+
+
+
+## Can you give an example of a time when you had to work on a team project and had to compromise with others to reach a solution?
+
+A few years back, my coworker and I were implementing UI components based on the [atomic design methodology](https://atomicdesign.bradfrost.com/chapter-2/). Once, a disagreement arose between us when we were classifying a specific UI component. I believed it was a molecule, while my coworker argued that it was an organism.
+
+After a discussion, we recognized that we were at a deadlock, so I suggested we consult with our designer for a review. I set up a meeting with the designer, explained the situation, and asked for help with the classification of the UI. After the designer briefly reviewed our work and gave us some feedback, I realized that the designer might be better equipped to make these categorization decisions because of their deeper understanding of atomic design principles.
+
+As a result, I proposed a comprehensive review of our classifications to the designer. After getting the review, the component in question was ultimately categorized as an organism by the designer. Consequently, I adjusted my opinion. We also adjusted several other components' classifications based on the designer's input.
+
+From this experience, both my coworker and I agreed that designers should take the lead in this categorization process, acknowledging that atomic design is more a design methodology than a technical implementation guide.
+
+## What do you think is your greatest area for improvement?
+WIP
+
+Sometime when I get too busy implementing features, I get less proactive on suggesting dev rules such as branching strategires, code-freezing deadlines, something to organizational solution. It's hard to overarch the organizational problems when I'm high focused on microscopic area. I guess 파악하기 both on my tasks and our team's context can be improved.
+
+
+## Describe a time you failed and had to alter course and adopt a new approach. How did you know change was necessary?
+
+WIP
+
+Back when I building a renewed ProtoPie website, some of the page markups were outsourced and the result was a plain html and css. But the website's UI was mainly written with React and emotion. So at first I translate the plain html/css markup to React component and emotion. It was fine and eventually an ideal 모습 of implementing pages, but it actually took quite a lot of time. But the website lauch date is coming forward but at some point I realized that the taks couldn't be done until the website lauch date.
+
+So I discussed with senior engineer, and I explained the situation. He suggested that instead of porting the way I did, just serve the page with the outsourced result without porting to React, then lauch, and after the successful lauch, then I can perfectly port them to the project stack. It made sense to me, so I did it so. I could successfullly launch a website on the target date and eventually port the rest of the pages.
+
+
+
+## Can you describe a time when you had to work with a tight timeline but was not given a clear direction on how to proceed?
+
+I frequently encounter tight deadlines. One case I remember is when the renewal project for NHN Dooray needed a beta launch within a month. I was responsible for rebuilding the 'Contacts' service of the platform and solely responsible for the beta launch. However, due to the high volume of features, it was impossible to reimplement them all before the deadline. Additionally, there was no clear guide on what exactly the beta launch should entail. Some said the first beta should only display the data, while others believed that minimal features should work properly.
+
+To clarify the requirements for the beta launch, I gathered PMs and designers for a meeting. I asked the PMs about the objectives of the beta release, the features it should include, and their importance. I also asked designers when the design guide would be ready. We created a board on a task management app and listed tasks to implement for the beta release, assigning priorities and estimated completion times for each. We also recorded the design schedule so I could focus on other tasks while the UI design was in progress.
+
+After the discussion, we finalized the scope of the first beta launch and identified dependent tasks for implementing features. This allowed me to clarify the ambiguities of the launch, schedule my tasks, and effectively use my time by avoiding bottlenecks. Eventually, I finished before the deadline and was able to launch successfully.
+
+
+## Can you describe a time when you had to adapt to changing priorities or requirements?
+WIP
+
+
+
+## Tell me about a time you learnt a new skill outside of work and applied it to your work.
+WIP
+
+## Tell me about a time you learnt a new skill set after observing others leveraging it to great success
+WIP
+
+## Can you describe a time when you had to effectively communicate technical information to a non-technical audience and how you approached it?
+
+- Explaining how browser responsiveness works to the designer
+- Explaining content marketers of Headless CMS works
