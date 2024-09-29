@@ -62,7 +62,10 @@ export default async function CategoryPage({
         };
       })
     )
-  ).filter((post) => post.categories?.includes(params.category));
+  ).filter(
+    (post) =>
+      post.categories?.includes(params.category) && Boolean(post.publishedAt)
+  );
 
   return (
     <>
@@ -106,6 +109,9 @@ export default async function CategoryPage({
               <div>{post.description}</div>
             </div>
           ))}
+          {posts.length === 0 && (
+            <div className="text-zinc-700 dark:text-zinc-300">No posts</div>
+          )}
         </div>
       </div>
     </>
