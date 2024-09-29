@@ -1,0 +1,88 @@
+export const metadata = {
+  title: 'Unpacking Detailed Explanation of My Resume',
+  description: 'Non sint nisi in qui excepteur dolor Lorem quis deserunt pariatur incididunt eiusmod aute.',
+  // publishedAt: 'September 19, 2024',
+  categories: ['software-development'],
+};
+
+export function generateMetadata() {
+  return {
+    ...metadata,
+    openGraph: {
+      title: `${metadata.title} | Blog | Hyukoo's Site`,
+      description: metadata.description,
+      images: ['https://hyukoo.one/hyukoo-kwon.jpeg']
+    },
+  };
+}
+
+# WIP: Unpacking Detailed Explanation of My Resume
+
+Date: September 19, 2024
+
+Category: [Software Development](/blog/categories/software-development)
+
+---
+
+## Table of Contents
+
+1. Introduction
+   - Career overview as a Frontend Engineer
+   - Purpose of this post
+
+2. NHN Dooray Experience
+   - Rewriting React-based productivity suite
+     - Minimizing initial rendering time by 50%
+     - Enhancing UX and supporting sales growth
+   - Re-architecting to Micro-Frontends
+     - Using Webpack's Module Federation
+     - Reducing deployment time by 80%
+     - Facilitating domain ownership for 20 developers
+   - Instituting a design system library
+     - Developing 70+ React components
+     - Cutting development time by two-thirds
+     - Maintaining consistent UX across 8 major services
+   - Developing a new subscription-based billing system
+     - Using Next.js
+     - Tapping into small and mid-sized businesses
+     - Contributing to 20% of total sales
+
+3. ProtoPie Experience
+   - Augmenting website performance with Next.js
+     - Implementing SSG for content pages
+     - Caching assets on CDN
+     - Boosting page rendering speed by 3x
+   - Implementing billing system with Paddle integration
+     - Reducing bounce rates by 25%
+   - Optimizing Storybook for UI testing
+     - Ensuring consistent UX
+     - Reducing UI-related bugs by 80%
+
+4. PortOne Experience
+   - Establishing payment data analytics product
+     - Visualizing $7.2 billion in annual transactions
+     - Using React, Redux, and Apache ECharts
+   - Contributing to open-source React Native module
+     - Simplifying PortOne payment integration
+     - Reducing integration time by up to 50%
+   - Revamping API integration documentation
+     - Building custom markdown CMS in React
+     - Accelerating customer integration by 30%
+
+5. Personal Project: Kiwiy Daily Scrum
+   - Developing open-source SaaS web app
+     - Using Next.js, Supabase, Vite, and Nx
+   - Implementing shared UI-kit in monorepo
+     - Accelerating development by 40%
+     - Ensuring 100% UI consistency across apps
+   - Conducting E2E testing with Playwright
+     - Enabling confident refactoring and feature additions
+     - Leading to 40% faster implementation while maintaining stability
+
+6. Technical Skills Overview
+   - Frontend technologies: JavaScript, TypeScript, React, Redux, Next.js, etc.
+   - Tools and practices: Webpack, Docker, GitHub Actions, E2E Testing, etc.
+
+7. Conclusion
+   - Recap of key technical achievements
+   - Approach to continuous learning and staying current in frontend development
